@@ -1,0 +1,93 @@
+.quiz-view {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10.3vh;
+  text-align: center;
+  height: 65vh;
+  font: normal 500 1.3rem "Roboto", sans-serif;
+  color: rgb(88, 83, 83);
+}
+
+.quiz-title {
+  text-align: center;
+}
+
+.question-card {
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.quiz-description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.motivational-message {
+  color: rgb(88, 83, 83);
+  font-size: 18px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fde7eb; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin: 3% auto;
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .quiz-view {
+    padding: 10px;
+    margin-top: 5vh;
+    height: auto; 
+  }
+
+  .question-card,
+  .motivational-message {
+    width: 90%; 
+    margin: 10px auto; 
+  }
+
+  .quiz-title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .quiz-description {
+    font-size: 0;
+    margin-top: 10px;
+  }
+
+  .motivational-message {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .quiz-view {
+    padding: 15px;
+    margin-top: 8vh;
+    height: auto; 
+  }
+
+  .question-card,
+  .motivational-message {
+    width: 80%; 
+    margin: 15px auto;
+  }
+
+
+  .quiz-description {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .motivational-message {
+    font-size: 17px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,127 @@
+.footer {
+    background-image: linear-gradient(to right, #f2709c, #ff9472);
+    color: white; 
+    text-align: center;
+    box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.185);
+}
+
+.contact {
+    padding: 1rem;
+    font: bold 1.7rem "Roboto", sans-serif;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-img {
+    width: 30px; 
+    height: 30px;
+    margin: 0.3rem 0;
+    vertical-align: middle;
+}
+
+.phone,
+.social-media {
+    margin-left: 0.5rem; 
+}
+
+.footer__copy {
+    margin: 0 0 1rem 0; 
+    font-size: 0.875rem;
+}
+
+/* Estilos para telas pequenas (smartphones) */
+@media (max-width: 600px) {
+    .footer__container {
+        padding: 1rem;
+        gap: 1rem; 
+    }
+
+    .contact {
+        font-size: 1.4rem;
+        padding: 0.5rem;
+    }
+
+    .contact-link {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .phone,
+    .social-media {
+        margin-left: 0; 
+    }
+
+    .footer__copy {
+        font-size: 0.75rem;
+    }
+}
+
+/* Estilos para telas médias (tablets e telas pequenas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .footer__container {
+        padding: 1rem 1.5rem;
+        gap: 1.5rem; 
+    }
+
+    .contact {
+        font-size: 1.5rem;
+    }
+
+    .contact-link {
+        gap: 1.5rem;
+    }
+
+    .info-item {
+        margin-bottom: 0.75rem;
+    }
+
+    .contact-img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .phone,
+    .social-media {
+        margin-left: 0.3rem; 
+    }
+
+    .footer__copy {
+        font-size: 0.8rem;
+    }
+}

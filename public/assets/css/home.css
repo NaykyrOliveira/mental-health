@@ -1,0 +1,12 @@
+
+  .quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.quiz-header h2 {
+    font-size: 1.8rem;
+}
+.quiz-header p {
+    font-size: 1rem;
+    color: #666;
+}

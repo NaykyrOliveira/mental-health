@@ -1,0 +1,439 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "Você se sentiu ansioso hoje?",
+        "category": "ansiedade",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Reconhecer sua ansiedade é o primeiro passo para enfrentá-la.",
+              "É corajoso admitir quando estamos ansiosos. Lembre-se de que você não está sozinho.",
+              "Sua ansiedade é válida, e buscar apoio pode ajudar a lidar melhor com isso."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "É ótimo que você não esteja se sentindo ansioso hoje!",
+              "A ausência de ansiedade é um sinal positivo. Continue cuidando da sua saúde mental.",
+              "Manter-se calmo é importante. Aproveite esse momento de tranquilidade!"
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Às vezes é difícil identificar nossos sentimentos. Não se preocupe!",
+              "É normal ter dúvidas sobre como se sente. Tire um momento para refletir sobre seus sentimentos.",
+              "Se você não tem certeza, talvez seja útil conversar com alguém de confiança sobre como está se sentindo."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Você tem dificuldade em se concentrar nas tarefas?",
+        "category": "ansiedade",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Lidar com dificuldades de concentração pode ser desafiador, mas você está fazendo o melhor que pode.",
+              "A concentração pode ser difícil às vezes. Dê-se crédito por continuar tentando.",
+              "Busque métodos para melhorar sua concentração, como pausas e técnicas de organização."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "Sua capacidade de concentração é uma habilidade valiosa. Continue assim!",
+              "Ter boa concentração é um sinal positivo. Use essa força para avançar em suas tarefas.",
+              "Mantenha seus hábitos saudáveis para continuar focado e produtivo."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "É normal ter dúvidas sobre sua concentração. Experimente técnicas diferentes para ver o que funciona para você.",
+              "Se você não tem certeza sobre sua concentração, observe seus padrões e veja o que pode ser melhorado.",
+              "Refletir sobre sua concentração pode ajudar a encontrar estratégias para melhorar a produtividade."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Você se sente frequentemente nervoso sem motivo aparente?",
+        "category": "ansiedade",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Sentir-se nervoso sem motivo aparente pode ser angustiante. Tente identificar gatilhos e buscar formas de relaxar.",
+              "É importante lidar com o nervosismo. Práticas de mindfulness podem ser úteis.",
+              "Conversar com um profissional pode ajudar a entender melhor e gerenciar esses sentimentos."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "É positivo que você não esteja se sentindo nervoso sem motivo. Continue a cuidar da sua saúde mental.",
+              "Manter-se tranquilo é uma grande conquista. Aproveite e cuide bem de seu bem-estar.",
+              "Sua capacidade de lidar com o estresse é valiosa. Continue aplicando estratégias eficazes para manter a calma."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza sobre seu estado emocional, pode ser útil observar seu comportamento ao longo do tempo.",
+              "Às vezes, identificar a origem do nervosismo pode ser complicado. Tente acompanhar seus sentimentos e reações.",
+              "Refletir sobre sua resposta emocional pode ajudar a entender melhor seus sentimentos."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Você sente que suas preocupações estão afetando sua qualidade de vida?",
+        "category": "ansiedade",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Preocupações excessivas podem impactar sua vida de várias maneiras. Procurar ajuda pode ser um bom passo.",
+              "Lidar com preocupações pode ser desafiador. Busque técnicas de gerenciamento de estresse e suporte profissional.",
+              "Buscar apoio e aprender a gerenciar suas preocupações pode melhorar sua qualidade de vida."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "É ótimo que suas preocupações não estejam afetando sua vida. Continue mantendo um equilíbrio saudável.",
+              "Manter-se bem apesar das preocupações é um sinal positivo. Continue cuidando de seu bem-estar.",
+              "Sua habilidade de lidar com preocupações sem impacto negativo é valiosa. Continue praticando boas estratégias de gestão."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, talvez seja útil avaliar como suas preocupações afetam seu dia a dia.",
+              "Refletir sobre a influência das preocupações na sua vida pode ajudar a entender melhor seu impacto.",
+              "Considerar conversar com alguém sobre suas preocupações pode ajudar a obter uma perspectiva mais clara."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Você sente uma sensação constante de tensão ou nervosismo?",
+        "category": "ansiedade",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Sentir-se constantemente tenso pode ser exaustivo. Técnicas de relaxamento e apoio profissional podem ajudar.",
+              "Gerenciar a tensão é importante para o bem-estar. Explore estratégias para aliviar o estresse e a ansiedade.",
+              "Buscar apoio e praticar técnicas de relaxamento pode ajudar a reduzir a sensação de tensão."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "Manter-se calmo e sem tensão é positivo. Continue praticando atividades que ajudam a manter sua paz interior.",
+              "Sua capacidade de lidar bem com a tensão é valiosa. Continue cuidando de si mesmo e mantendo boas práticas de relaxamento.",
+              "A sensação de calma é um sinal de que suas estratégias estão funcionando bem. Continue a praticar essas técnicas."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, observe como se sente em diferentes situações para identificar a presença de tensão.",
+              "Refletir sobre seus sentimentos em diferentes momentos pode ajudar a identificar padrões de tensão ou calma.",
+              "Considerar seu nível de tensão em vários contextos pode oferecer insights sobre como gerenciá-la."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Você tem dificuldade em manter o ânimo para atividades que antes gostava?",
+        "category": "depressão",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "A perda de interesse em atividades pode ser um sinal importante. Procurar apoio pode ajudar a recuperar o ânimo.",
+              "Reconhecer essa dificuldade é um passo importante. Considerar mudanças e buscar suporte pode ser útil.",
+              "Falar com um profissional sobre sua perda de interesse pode ajudar a encontrar maneiras de redescobrir a motivação."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "Manter o ânimo para atividades é um sinal positivo. Continue a envolver-se em coisas que você gosta.",
+              "Sua capacidade de manter o interesse em atividades é valiosa. Continue praticando o que traz alegria para sua vida.",
+              "Celebre seu ânimo contínuo e mantenha-se engajado nas atividades que você aprecia."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, tente refletir sobre suas atividades diárias e como se sente em relação a elas.",
+              "Às vezes, é útil avaliar como você se sente sobre suas atividades para entender melhor seu nível de interesse.",
+              "Considerar como suas emoções afetam seu ânimo pode ajudar a identificar áreas que precisam de atenção."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Você sente que está lutando para encontrar alegria nas coisas que costumava fazer?",
+        "category": "depressão",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "A dificuldade em encontrar alegria pode ser um sinal importante. Buscar ajuda pode ajudar a melhorar seu bem-estar.",
+              "A perda de interesse é um desafio. Considere falar com um profissional para explorar maneiras de redescobrir a alegria.",
+              "Buscar apoio e explorar novas atividades pode ajudar a encontrar alegria novamente."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "É positivo que você ainda encontre alegria nas coisas. Continue buscando atividades que lhe tragam satisfação.",
+              "Sua capacidade de manter a alegria é um sinal de resiliência. Continue a nutrir suas fontes de felicidade.",
+              "Celebre os momentos de alegria e continue praticando as atividades que lhe fazem bem."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, tente refletir sobre seus sentimentos e como as atividades impactam seu bem-estar.",
+              "Observar como você se sente em relação às suas atividades pode oferecer insights sobre sua capacidade de encontrar alegria.",
+              "Avaliar seu nível de satisfação com as atividades pode ajudar a entender melhor suas emoções."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Você se sente frequentemente cansado, mesmo após uma boa noite de sono?",
+        "category": "depressão",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Sentir-se cansado pode ser um sinal de que algo não está bem. Considere procurar apoio para entender a causa.",
+              "A fadiga constante pode afetar sua qualidade de vida. Falar com um profissional pode ajudar a encontrar soluções.",
+              "Cuidar da sua saúde e buscar apoio pode ajudar a lidar com a fadiga e melhorar seu bem-estar."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "É ótimo que você não esteja se sentindo constantemente cansado. Continue a manter hábitos saudáveis de sono e descanso.",
+              "A energia que você tem é um sinal positivo. Continue praticando boas rotinas para manter sua vitalidade.",
+              "Manter-se bem descansado é importante. Continue a cuidar de si mesmo para manter a energia."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, observe seus padrões de sono e energia ao longo do tempo.",
+              "Refletir sobre como você se sente em relação ao seu sono e energia pode ajudar a identificar possíveis problemas.",
+              "Considerar seu nível de cansaço em diferentes momentos pode fornecer uma visão mais clara sobre sua energia."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Você sente que está lutando para se concentrar em tarefas simples?",
+        "category": "depressão",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "A dificuldade em se concentrar pode ser frustrante. Tente identificar estratégias que podem ajudar a melhorar sua concentração.",
+              "Buscar maneiras de gerenciar a concentração é importante. Considere técnicas e suporte para lidar com isso.",
+              "Conversar com um profissional pode ajudar a encontrar métodos para melhorar sua concentração e foco."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "Manter uma boa concentração é um sinal positivo. Continue praticando boas técnicas para manter seu foco.",
+              "Sua capacidade de se concentrar é valiosa. Continue a utilizar métodos que funcionam bem para você.",
+              "Celebre seu sucesso em manter a concentração e continue aplicando suas estratégias eficazes."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, observe como se sente em relação à sua concentração em diferentes tarefas.",
+              "Refletir sobre seu nível de concentração pode ajudar a identificar áreas que precisam de atenção.",
+              "Considerar seu desempenho em tarefas pode oferecer insights sobre como você está lidando com a concentração."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Você sente que suas interações sociais são mais difíceis do que costumavam ser?",
+        "category": "depressão",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Sentir dificuldades em interações sociais pode ser um sinal de que algo está acontecendo. Buscar apoio pode ajudar.",
+              "Lidar com desafios sociais é um processo. Conversar com alguém de confiança pode oferecer alívio e compreensão.",
+              "Explorar maneiras de melhorar suas habilidades sociais pode ser útil e encontrar suporte pode fazer a diferença."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "É positivo que você esteja se sentindo confortável nas suas interações sociais. Continue a cultivar boas relações.",
+              "Manter boas interações sociais é um sinal de resiliência. Continue praticando suas habilidades sociais.",
+              "Sua capacidade de lidar bem com interações sociais é valiosa. Continue a construir e fortalecer suas conexões."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, tente observar como suas interações sociais têm mudado ao longo do tempo.",
+              "Refletir sobre suas experiências sociais pode ajudar a entender melhor se há dificuldades emergentes.",
+              "Considerar a qualidade de suas interações pode oferecer insights sobre suas habilidades sociais."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Você sente que tem dificuldade em entender como os outros estão se sentindo?",
+        "category": "autismo",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "É normal ter desafios em entender as emoções dos outros. Praticar a empatia pode ajudar a melhorar essa habilidade.",
+              "Trabalhar para entender as emoções dos outros pode levar tempo e prática. Dê-se crédito pelo esforço.",
+              "Buscar formas de melhorar suas habilidades de comunicação e empatia pode ser benéfico."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "Sua capacidade de entender os sentimentos dos outros é uma habilidade valiosa. Continue praticando e aprimorando essa habilidade.",
+              "Manter uma boa comunicação e empatia é importante. Celebre suas conquistas nessa área.",
+              "Continuar a desenvolver habilidades de empatia pode enriquecer seus relacionamentos e interações."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Às vezes, pode ser difícil avaliar sua compreensão das emoções dos outros. Refletir sobre suas interações pode ajudar.",
+              "Se você não tem certeza sobre sua capacidade de entender os outros, considere conversar com alguém de confiança sobre isso.",
+              "Explorar técnicas e recursos para melhorar sua empatia pode ser útil se você estiver incerto sobre suas habilidades."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "Você se sente desconfortável em situações sociais?",
+        "category": "autismo",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Sentir-se desconfortável em situações sociais é uma experiência comum. Buscar técnicas de enfrentamento pode ajudar.",
+              "É importante reconhecer seus sentimentos em situações sociais. Praticar habilidades sociais pode tornar essas situações mais confortáveis.",
+              "Conversar com um profissional pode oferecer estratégias para lidar com o desconforto social."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "É ótimo que você se sinta confortável em situações sociais. Continue a praticar e fortalecer suas habilidades sociais.",
+              "Sua capacidade de lidar bem com situações sociais é uma vantagem. Continue cultivando suas interações e conexões.",
+              "Manter-se confortável em interações sociais é uma habilidade valiosa. Continue a desenvolver e a aplicar suas técnicas."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, observe como se sente em diferentes situações sociais e como isso afeta seu bem-estar.",
+              "Refletir sobre seu conforto em situações sociais pode ajudar a identificar áreas que precisam de atenção.",
+              "Considerar conversar com alguém sobre suas experiências sociais pode fornecer insights úteis."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "Você sente que tem dificuldades para interpretar sinais não verbais dos outros?",
+        "category": "autismo",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Interpretar sinais não verbais pode ser desafiador. Praticar e buscar apoio pode ajudar a melhorar essa habilidade.",
+              "É normal ter dificuldades com sinais não verbais. Considerar técnicas de comunicação e apoio pode ser útil.",
+              "Trabalhar para melhorar a interpretação de sinais não verbais pode enriquecer suas interações sociais."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "Sua habilidade em interpretar sinais não verbais é valiosa. Continue aplicando e desenvolvendo essas habilidades.",
+              "Manter-se atento aos sinais não verbais dos outros é uma grande vantagem. Continue praticando essa habilidade.",
+              "Celebre sua capacidade de interpretar sinais não verbais e continue a aprimorar suas interações sociais."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, observe como você reage aos sinais não verbais e considere estratégias para melhorar.",
+              "Refletir sobre como você interpreta sinais não verbais pode ajudar a identificar áreas para desenvolvimento.",
+              "Considerar práticas para melhorar a interpretação de sinais não verbais pode ser benéfico."
+            ]
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "Você acha que tem dificuldade em entender piadas ou sarcasmo?",
+        "category": "autismo",
+        "options": [
+          {
+            "option": "sim",
+            "motivationalMessages": [
+              "Compreender piadas e sarcasmo pode ser desafiador. Praticar e buscar apoio pode ajudar.",
+              "Reconhecer dificuldades em entender humor é um passo importante. Trabalhar nessa área pode enriquecer suas interações.",
+              "Conversar com alguém sobre humor e sarcasmo pode ajudar a melhorar sua compreensão."
+            ]
+          },
+          {
+            "option": "não",
+            "motivationalMessages": [
+              "Sua habilidade em entender humor e sarcasmo é uma vantagem. Continue a usar essa habilidade em suas interações.",
+              "Compreender piadas e sarcasmo é uma habilidade valiosa. Continue a praticar e a aplicar isso em suas interações sociais.",
+              "Celebre sua capacidade de entender diferentes formas de humor e continue a fortalecer essa habilidade."
+            ]
+          },
+          {
+            "option": "não sei",
+            "motivationalMessages": [
+              "Se você não tem certeza, observe como você reage a piadas e sarcasmo para entender melhor sua compreensão.",
+              "Refletir sobre sua capacidade de entender humor pode oferecer insights sobre suas habilidades sociais.",
+              "Considerar estratégias para melhorar a compreensão do humor e do sarcasmo pode ser útil."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
