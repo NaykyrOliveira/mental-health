@@ -76,11 +76,6 @@ export default {
           contact: '5561981994850' 
         },
         {
-          name: 'Celma Lucia Fraga',
-          specialization: 'Psicanalista',
-          contact: '5517996518599' 
-        },
-        {
           name: 'Clínica Neoviv',
           specialization: 'Psiquiatra',
           contact: '5561985826462' 

@@ -58,15 +58,6 @@
   }
   
   @media (max-width: 600px) {
-    .menu {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0.5rem;
-      gap: 1rem;
-      background-image: linear-gradient(to right, #f2709c, #ff9472);
-      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0);
-    }
-  
     .menu-items {
       display: none; 
       flex-direction: column;

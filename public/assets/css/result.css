@@ -81,3 +81,51 @@
 .card-contact a:hover {
   text-decoration: underline; 
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .result-view {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .result-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .result-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .description {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .card-container {
+    gap: 10px;
+  }
+
+  .professional-card {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .card-title {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+
+  .card-specialization {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+  }
+
+  .card-contact {
+    font-size: 0.8em;
+  }
+}
