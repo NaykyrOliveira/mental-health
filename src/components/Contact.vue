@@ -5,13 +5,17 @@
                 <h3 class="contact">Contato:</h3>
                 <div class="contact-link">
                     <div class="info-item">
-                        <img :src="github" :alt="githubIcon" class="contact-img">
-                        <p class="social-media">GitHub</p>
-                      </div>
-                      <div class="info-item">
-                        <img :src="linkedin" :alt="linkedinIcon" class="contact-img">
-                        <p class="social-media">LinkedIn</p>
-                      </div>
+                        <a :href="githubUrl" target="_blank" rel="noopener noreferrer">
+                            <img :src="github" :alt="githubIcon" class="contact-img">
+                            <p class="social-media">GitHub</p>
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer">
+                            <img :src="linkedin" :alt="linkedinIcon" class="contact-img">
+                            <p class="social-media">LinkedIn</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <span class="footer__copy">
@@ -29,7 +33,9 @@ export default {
             github: '../assets/img/icons/github.png',
             linkedin: '../assets/img/icons/linkedin.png',
             githubIcon: 'Ícone GitHub',
-            linkedinIcon: 'Ícone LinkedIn'
+            linkedinIcon: 'Ícone LinkedIn',
+            githubUrl: 'https://github.com/NaykyrOliveira/mental-health', 
+            linkedinUrl: 'https://www.linkedin.com/in/naykyr-oliveira/' 
         };
     }
 };

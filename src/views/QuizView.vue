@@ -12,21 +12,27 @@
     </div>
 
     <div v-else>
-      <div>
-        <h2>Resultado do Quiz</h2>
-        <p>{{ result }}</p>
-      </div>
+      <ResultView
+        :answers="answers"
+        :questions="questions"
+        :recommendations="recommendations"
+        :action="action"
+        :footer="footer"
+        :professionals="professionals"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import QuestionCard from '../components/QuestionCard.vue';
+import ResultView from './ResultView.vue';
 import data from '../db/data.json';
 
 export default {
   components: {
     QuestionCard,
+    ResultView
   },
   data() {
     return {
@@ -62,42 +68,14 @@ export default {
         setTimeout(() => {
           this.showMotivationalMessage = false;
           this.currentQuestionIndex++;
-        }, 7000); 
+        }, 7000);
       } else {
         setTimeout(() => {
-          this.generateResults();
-        }, 10000); 
+          this.$router.push({ name: 'result', query: { answers: JSON.stringify(this.answers), questions: JSON.stringify(this.questions) } });
+        }, 10000);
       }
-    },
-    generateResults() {
-      let recommendation = "Continue cuidando da sua saúde mental!";
-      
-      const categories = {
-        ansiedade: 0,
-        depressão: 0,
-        autismo: 0
-      };
-
-      this.answers.forEach((answer) => {
-        const question = this.questions.find(
-          (q) => q.id === answer.questionId
-        );
-        if (question && categories.hasOwnProperty(question.category)) {
-          categories[question.category]++;
-        }
-      });
-
-      const maxCategory = Object.keys(categories).reduce((a, b) =>
-        categories[a] > categories[b] ? a : b
-      );
-      
-      if (data.recommendations && data.recommendations.hasOwnProperty(maxCategory)) {
-        recommendation = data.recommendations[maxCategory];
-      }
-
-      this.result = recommendation;
     }
-  },
+  }
 };
 </script>
 

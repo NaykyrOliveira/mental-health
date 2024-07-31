@@ -1,3 +1,4 @@
+// ResultView.vue
 <template>
   <div class="result-view">
     <h1 class="result-title">Seu Resultado</h1>
@@ -46,11 +47,69 @@
 <script>
 export default {
   name: 'ResultView',
-  props: {
-    summary: {
-      type: String,
-      default: 'Você obteve um resultado de ansiedade.'
+  data() {
+    return {
+      summary: '',
+      answers: [],
+      questions: []
+    };
+  },
+  created() {
+    try {
+      this.answers = JSON.parse(this.$route.query.answers || '[]');
+      this.questions = JSON.parse(this.$route.query.questions || '[]');
+    } catch (e) {
+      console.error('Error parsing JSON from query params:', e);
+      this.answers = [];
+      this.questions = [];
+    }
+    this.summary = this.generateSummary();
+  },
+  methods: {
+    generateSummary() {
+      const resultCategory = this.calculateResults();
+      let summary = "";
+
+      switch (resultCategory) {
+        case "ansiedade":
+          summary = "Seu resultado sugere que você pode estar enfrentando ansiedade. Recomendamos procurar ajuda profissional.";
+          break;
+        case "depressão":
+          summary = "Seu resultado sugere que você pode estar enfrentando depressão. Recomendamos procurar ajuda profissional.";
+          break;
+        case "autismo":
+          summary = "Seu resultado sugere que você pode estar no espectro autista. Recomendamos procurar ajuda profissional.";
+          break;
+        default:
+          summary = "Não foi possível determinar uma categoria predominante. Recomendamos procurar ajuda profissional para uma avaliação mais detalhada.";
+      }
+
+      return summary;
     },
+    calculateResults() {
+      const categories = {
+        ansiedade: 0,
+        depressão: 0,
+        autismo: 0
+      };
+
+      if (!Array.isArray(this.answers) || !Array.isArray(this.questions)) {
+        console.error('Invalid or missing answers/questions data');
+        return '';
+      }
+
+      this.answers.forEach(answer => {
+        const question = this.questions.find(q => q.id === answer.questionId);
+        if (question) {
+          categories[question.category]++;
+        }
+      });
+
+      const maxCategory = Object.keys(categories).reduce((a, b) => categories[a] > categories[b] ? a : b);
+      return maxCategory;
+    }
+  },
+  props: {
     recommendations: {
       type: Array,
       default: () => [
