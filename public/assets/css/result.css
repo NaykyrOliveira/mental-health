@@ -82,7 +82,6 @@
   text-decoration: underline; 
 }
 
-/* Media Query for smaller screens */
 @media (max-width: 600px) {
   .result-view {
     margin: 2rem 1rem;

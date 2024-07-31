@@ -55,7 +55,11 @@
     font-size: 0.875rem;
 }
 
-/* Estilos para telas pequenas (smartphones) */
+a {
+    text-decoration: none; 
+    color: #FFF; 
+}
+
 @media (max-width: 600px) {
     .footer__container {
         padding: 1rem;
@@ -92,7 +96,6 @@
     }
 }
 
-/* Estilos para telas médias (tablets e telas pequenas) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .footer__container {
         padding: 1rem 1.5rem;
