@@ -1,4 +1,3 @@
-// ResultView.vue
 <template>
   <div class="result-view">
     <h1 class="result-title">Seu Resultado</h1>
@@ -100,12 +99,18 @@ export default {
 
       this.answers.forEach(answer => {
         const question = this.questions.find(q => q.id === answer.questionId);
-        if (question) {
+        if (question && question.category in categories) {
           categories[question.category]++;
         }
       });
 
-      const maxCategory = Object.keys(categories).reduce((a, b) => categories[a] > categories[b] ? a : b);
+      const validCategories = Object.keys(categories).filter(cat => categories[cat] > 3);
+
+      if (validCategories.length === 0) {
+        return '';
+      }
+
+      const maxCategory = validCategories.reduce((a, b) => categories[a] > categories[b] ? a : b);
       return maxCategory;
     }
   },

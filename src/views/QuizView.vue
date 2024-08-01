@@ -12,14 +12,7 @@
     </div>
 
     <div v-else>
-      <ResultView
-        :answers="answers"
-        :questions="questions"
-        :recommendations="recommendations"
-        :action="action"
-        :footer="footer"
-        :professionals="professionals"
-      />
+      <ResultView />
     </div>
   </div>
 </template>
@@ -28,6 +21,7 @@
 import QuestionCard from '../components/QuestionCard.vue';
 import ResultView from './ResultView.vue';
 import data from '../db/data.json';
+import { mapMutations } from 'vuex';
 
 export default {
   components: {
@@ -39,12 +33,12 @@ export default {
       currentQuestionIndex: 0,
       questions: data.questions,
       answers: [],
-      result: '',
       motivationalMessage: '',
-      showMotivationalMessage: false,
+      showMotivationalMessage: false
     };
   },
   methods: {
+    ...mapMutations(['setAnswers', 'setQuestions']),
     handleAnswer(answer) {
       this.answers.push({
         questionId: this.questions[this.currentQuestionIndex].id,
@@ -70,8 +64,10 @@ export default {
           this.currentQuestionIndex++;
         }, 7000);
       } else {
+        this.setAnswers(this.answers);
+        this.setQuestions(this.questions);
         setTimeout(() => {
-          this.$router.push({ name: 'result', query: { answers: JSON.stringify(this.answers), questions: JSON.stringify(this.questions) } });
+          this.$router.push({ name: 'result' });
         }, 10000);
       }
     }
