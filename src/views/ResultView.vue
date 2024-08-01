@@ -55,10 +55,17 @@ export default {
   },
   created() {
     try {
-      this.answers = JSON.parse(this.$route.query.answers || '[]');
-      this.questions = JSON.parse(this.$route.query.questions || '[]');
+      const answersStr = localStorage.getItem('quizAnswers') || '[]';
+      const questionsStr = localStorage.getItem('quizQuestions') || '[]';
+      this.answers = JSON.parse(answersStr);
+      this.questions = JSON.parse(questionsStr);
+      console.log('Answers:', this.answers);
+      console.log('Questions:', this.questions);
+      
+      localStorage.removeItem('quizAnswers');
+      localStorage.removeItem('quizQuestions');
     } catch (e) {
-      console.error('Error parsing JSON from query params:', e);
+      console.error('Error parsing JSON from localStorage:', e);
       this.answers = [];
       this.questions = [];
     }
@@ -78,6 +85,9 @@ export default {
           break;
         case "autismo":
           summary = "Seu resultado sugere que você pode estar no espectro autista. Recomendamos procurar ajuda profissional.";
+          break;
+        case "misto":
+          summary = "Seu resultado sugere uma combinação de sintomas. Recomendamos procurar ajuda profissional para uma avaliação mais detalhada.";
           break;
         default:
           summary = "Não foi possível determinar uma categoria predominante. Recomendamos procurar ajuda profissional para uma avaliação mais detalhada.";
@@ -99,19 +109,23 @@ export default {
 
       this.answers.forEach(answer => {
         const question = this.questions.find(q => q.id === answer.questionId);
-        if (question && question.category in categories) {
-          categories[question.category]++;
+        if (question && categories.hasOwnProperty(question.category)) {
+          if (answer.answer === 'sim') {
+            categories[question.category]++;
+          }
         }
       });
 
-      const validCategories = Object.keys(categories).filter(cat => categories[cat] > 3);
+      console.log('Category counts:', categories);
 
-      if (validCategories.length === 0) {
-        return '';
+      const maxCount = Math.max(...Object.values(categories));
+      const maxCategories = Object.keys(categories).filter(key => categories[key] === maxCount);
+
+      if (maxCategories.length > 1) {
+        return 'misto';
+      } else {
+        return maxCategories[0] || '';
       }
-
-      const maxCategory = validCategories.reduce((a, b) => categories[a] > categories[b] ? a : b);
-      return maxCategory;
     }
   },
   props: {

@@ -81,7 +81,10 @@ export default {
         }, 7000);
       } else {
         setTimeout(() => {
-          this.$router.push({ name: 'result', query: { answers: JSON.stringify(this.answers), questions: JSON.stringify(this.questions) } });
+          localStorage.setItem('quizAnswers', JSON.stringify(this.answers));
+          localStorage.setItem('quizQuestions', JSON.stringify(this.questions));
+          
+          this.$router.push({ name: 'result' });
         }, 10000);
       }
     }
