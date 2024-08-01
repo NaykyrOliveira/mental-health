@@ -59,13 +59,10 @@ export default {
       const questionsStr = localStorage.getItem('quizQuestions') || '[]';
       this.answers = JSON.parse(answersStr);
       this.questions = JSON.parse(questionsStr);
-      console.log('Answers:', this.answers);
-      console.log('Questions:', this.questions);
       
       localStorage.removeItem('quizAnswers');
       localStorage.removeItem('quizQuestions');
     } catch (e) {
-      console.error('Error parsing JSON from localStorage:', e);
       this.answers = [];
       this.questions = [];
     }
@@ -103,7 +100,6 @@ export default {
       };
 
       if (!Array.isArray(this.answers) || !Array.isArray(this.questions)) {
-        console.error('Invalid or missing answers/questions data');
         return '';
       }
 
@@ -116,7 +112,6 @@ export default {
         }
       });
 
-      console.log('Category counts:', categories);
 
       const maxCount = Math.max(...Object.values(categories));
       const maxCategories = Object.keys(categories).filter(key => categories[key] === maxCount);
