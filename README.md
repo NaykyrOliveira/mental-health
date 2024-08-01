@@ -18,8 +18,7 @@
 
  
   
-![Captura de tela 2024-07-31 162607](https://github.com/user-attachments/assets/7e9ac6d6-ae29-475b-bde8-7c4c6c784c0b)
-
+![Captura de tela 2024-08-01 082634](https://github.com/user-attachments/assets/a0f63880-15e1-447c-b209-cbd6631761d8)
 
 
 
