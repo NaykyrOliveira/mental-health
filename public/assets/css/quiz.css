@@ -36,6 +36,32 @@
   width: 600px;
 }
 
+.progress-container {
+  margin: 1rem auto; 
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar {
+  background-color: #af4c86;
+  height: 15px;
+  max-width: 300px;
+  width: 100%;
+  transition: width 0.5s;
+  border-radius: 30px;
+  margin: 0 auto; 
+}
+
+.progress-text {
+  margin: 0.5rem 0;
+  font-size: 16px;
+  text-align: center; 
+}
+
 @media (max-width: 600px) {
   .menu-items.show-menu {
     padding: 0 0.7rem;

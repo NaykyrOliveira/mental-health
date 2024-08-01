@@ -3,6 +3,11 @@
     <h1 class="quiz-title">Quiz sobre Saúde Mental</h1>
     <p class="quiz-description">Responda às perguntas para entender melhor seu estado de saúde mental.</p>
 
+    <div class="progress-container">
+      <p class="progress-text">{{ currentQuestionIndex + 1 }} de {{ questions.length }} perguntas respondidas ({{ progressPercentage }}%)</p>
+      <div class="progress-bar" :style="{ width: progressPercentage + '%' }"></div>
+    </div>
+
     <div v-if="currentQuestionIndex < questions.length">
       <QuestionCard
         :question="questions[currentQuestionIndex]"
@@ -12,7 +17,14 @@
     </div>
 
     <div v-else>
-      <ResultView />
+      <ResultView
+        :answers="answers"
+        :questions="questions"
+        :recommendations="recommendations"
+        :action="action"
+        :footer="footer"
+        :professionals="professionals"
+      />
     </div>
   </div>
 </template>
@@ -21,7 +33,6 @@
 import QuestionCard from '../components/QuestionCard.vue';
 import ResultView from './ResultView.vue';
 import data from '../db/data.json';
-import { mapMutations } from 'vuex';
 
 export default {
   components: {
@@ -33,12 +44,17 @@ export default {
       currentQuestionIndex: 0,
       questions: data.questions,
       answers: [],
+      result: '',
       motivationalMessage: '',
-      showMotivationalMessage: false
+      showMotivationalMessage: false,
     };
   },
+  computed: {
+    progressPercentage() {
+      return Math.floor((this.currentQuestionIndex / this.questions.length) * 100);
+    }
+  },
   methods: {
-    ...mapMutations(['setAnswers', 'setQuestions']),
     handleAnswer(answer) {
       this.answers.push({
         questionId: this.questions[this.currentQuestionIndex].id,
@@ -64,10 +80,8 @@ export default {
           this.currentQuestionIndex++;
         }, 7000);
       } else {
-        this.setAnswers(this.answers);
-        this.setQuestions(this.questions);
         setTimeout(() => {
-          this.$router.push({ name: 'result' });
+          this.$router.push({ name: 'result', query: { answers: JSON.stringify(this.answers), questions: JSON.stringify(this.questions) } });
         }, 10000);
       }
     }
