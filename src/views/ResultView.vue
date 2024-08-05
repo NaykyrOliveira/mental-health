@@ -148,11 +148,6 @@ export default {
           specialization: 'Psicóloga',
           contact: '5561981994850' 
         },
-        {
-          name: 'Clínica Neoviv',
-          specialization: 'Psiquiatra',
-          contact: '5561985826462' 
-        }
       ]
     }
   }
