@@ -34,20 +34,21 @@
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: center; 
     margin-bottom: 1rem;
 }
 
 .contact-img {
     width: 30px; 
     height: 30px;
-    margin: 0.3rem 0;
-    vertical-align: middle;
+    margin-right: 0rem; 
 }
 
-.phone,
 .social-media {
-    margin-left: 0.5rem; 
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-left: 0; 
 }
 
 .footer__copy {
@@ -77,8 +78,8 @@ a {
     }
 
     .info-item {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
     }
 
     .contact-img {
@@ -86,7 +87,6 @@ a {
         height: 25px;
     }
 
-    .phone,
     .social-media {
         margin-left: 0; 
     }
@@ -119,7 +119,6 @@ a {
         height: 28px;
     }
 
-    .phone,
     .social-media {
         margin-left: 0.3rem; 
     }
