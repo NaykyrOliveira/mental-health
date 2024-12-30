@@ -6,13 +6,13 @@
                 <div class="contact-link">
                     <div class="info-item">
                         <a :href="githubUrl" target="_blank" rel="noopener noreferrer">
-                            <img :src="github" :alt="githubIcon" class="contact-img">
+                            <i class="bi bi-github"></i>
                             <p class="social-media">GitHub</p>
                         </a>
                     </div>
                     <div class="info-item">
                         <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer">
-                            <img :src="linkedin" :alt="linkedinIcon" class="contact-img">
+                            <i class="bi bi-linkedin"></i>
                             <p class="social-media">LinkedIn</p>
                         </a>
                     </div>
@@ -30,10 +30,6 @@ export default {
     name: "Footer",
     data() {
         return {
-            github: '../assets/img/icons/github.png',
-            linkedin: '../assets/img/icons/linkedin.png',
-            githubIcon: 'Ícone GitHub',
-            linkedinIcon: 'Ícone LinkedIn',
             githubUrl: 'https://github.com/NaykyrOliveira/mental-health', 
             linkedinUrl: 'https://www.linkedin.com/in/naykyr-oliveira/' 
         };
