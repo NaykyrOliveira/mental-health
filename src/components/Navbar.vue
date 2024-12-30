@@ -2,14 +2,17 @@
   <header class="hero">
     <nav class="menu">
       <div class="menu-items">
-        <router-link to="/" @click="closeMenu">
-          <font-awesome-icon :icon="['fas', 'home']" />Bem-vindo
+        <router-link to="/">
+          <i class="bi bi-house-door"></i>
+          <span>Bem-vindo</span>
         </router-link>
-        <router-link to="/result" @click="closeMenu">
-          <font-awesome-icon :icon="['fas', 'chart-bar']" />Meus Resultados
+        <router-link to="/result">
+          <i class="bi bi-bar-chart"></i>
+          <span>Meus Resultados</span>
         </router-link>
-        <router-link to="/about" @click="closeMenu">
-          <font-awesome-icon :icon="['fas', 'info-circle']" />Quem Somos
+        <router-link to="/about">
+          <i class="bi bi-info-circle"></i>
+          <span>Quem Somos</span>
         </router-link>
       </div>
     </nav>
@@ -18,7 +21,7 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: "Navbar"
 }
 </script>
 
